@@ -192,13 +192,19 @@ document.getElementById("field_text").addEventListener("input", function(){
     document.getElementById("field_text").value = document.getElementById("field_text").value.replace(/[^a-zA-Z0-9 ]/g,'');
 })
 document.getElementById("key_input").addEventListener("input", function(){
+    let val =document.getElementById("key_input").value
     document.getElementById("key_input").value = document.getElementById("key_input").value.replace(mask2Regex,'');
     if(selected==="1" && parseInt(document.getElementById("key_input").value) >35){
         document.getElementById("key_input").value = 35
     }else if(selected==="2"){
         
-    }else if(selected==="3"){
-        mask2Regex = /[^0-9]/g
+    }else if(selected==="3"&& val.length > 7){
+        document.getElementById("key_input").value = val.slice(0,8)
+    }
+    if(selected==="3"){
+        if(/(.).*\1/.test(val)){
+            document.getElementById("key_input").value = val.slice(0,val.length-1)
+        }
     }
 })
 //string.replace(/[^a-zA-Z0-9]/g,'_');
@@ -292,3 +298,4 @@ function copy(){
     
     //./assets/copyicon.png"
 }
+
