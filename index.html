@@ -1,0 +1,68 @@
+<!-- Equipe10 -->
+<!-- 12/04/2023 -->
+<!-- Érika Messias Rodrigues, RA: 183591, 3° Semestre SI -->
+<!-- Vitoria Izaine dos Santos, RA: 193034, 3° Semestre Engenharia da computação -->
+<!-- Henrique Michelini, RA: 047792, 5 SI -->
+<!-- Felipe Ambruste Credendio, RA: 197067, 1° semestre engenharia computação -->
+<!-- Gabriel Cabral Gregório de Lima, RA: 060993, 5 SI -->
+<!-- Vinicius Cabral Gregório de Lima, RA: 060994, 7 Engenharia da computação -->
+<!-- Henry Adriel Oliveira, RA: 194901, 1° semestre, Engenharia da computação -->
+<!-- João Pedro Ferreira da Costa , RA: 060008, 3° Semestre engenharia de computação -->
+<!-- Gustavo Ferreira do nascimento, RA: 060067, 5 semestre engrenharia da computação -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificando o Futuro</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="./assets/3470475.png">
+</head>
+<body>
+    <div class="body_holder">
+
+
+        <div class="container body2">
+            <div class="card_holder">
+                <div class="content_header">
+                    <h1 class="title">
+                        Descodificando o Futuro
+                    </h1>
+                    <select class="cypher_type_selection" name="" id="cypher_type_selection">
+                        <option value="1" class="cypers">César </option>
+                        <option value="2" class="cypers">Vigenere</option>
+                        <option value="3" class="cypers">Trilha</option>
+                    </select>
+                </div>
+                <div class="content_body">
+                    <textarea name="" id="field_text" cols="40" rows="18" class="field nodecoded" pattern="[a-zA-Z0-9]+"></textarea>
+                
+                    <img onclick="copy()" id="img_changer" class="copy_icon" src="./assets/copyicon.png" alt="">
+                    <textarea name="" id="returned_area" cols="40" disabled rows="18" class="field decoded"></textarea>
+                </div>
+                <div class="send_row">
+                    <div class="key_container">
+                        <p class="title_row">Chave: </p>
+                        <input type="text" class="key_input" id="key_input">
+                    </div>
+                    <div class="buttons">
+                        <button class="cript btn" id="cript">
+                            Criptografar
+                        </button>
+                        <button class="descript btn" id="descript">
+                            Descriptografar
+                        </button>
+                        <button class="descript btn" id="clear">
+                            Limpar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="./index.js"></script>
+</html>

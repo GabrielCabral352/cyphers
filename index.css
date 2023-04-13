@@ -1,0 +1,182 @@
+/* <!-- Equipe10 -->
+<!-- 12/04/2023 -->
+<!-- Érika Messias Rodrigues, RA: 183591, 3° Semestre SI -->
+<!-- Vitoria Izaine dos Santos, RA: 193034, 3° Semestre Engenharia da computação -->
+<!-- Henrique Michelini, RA: 047792, 5 SI -->
+<!-- Felipe Ambruste Credendio, RA: 197067, 1° semestre engenharia computação -->
+<!-- Gabriel Cabral Gregório de Lima, RA: 060993, 5 SI -->
+<!-- Vinicius Cabral Gregório de Lima, RA: 060994, 7 Engenharia da computação -->
+<!-- Henry Adriel Oliveira, RA: 194901, 1° semestre, Engenharia da computação -->
+<!-- João Pedro Ferreira da Costa , RA: 060008, 3° Semestre engenharia de computação -->
+<!-- Gustavo Ferreira do nascimento, RA: 060067, 5 semestre engrenharia da computação -->
+*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #0E163B;
+}
+
+.container{
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body2{
+    background-image: url(./assets/imagem.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card_holder{
+    width: auto;
+    height: 70dvh;
+    background-color: none;
+}
+.content_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cypher_type_selection{
+    width: auto;
+    outline: 0;
+    font-size: 20px;
+    background:none;
+    color: #2CB2B8;
+    border-bottom: 2px solid #2CB2B8;
+    text-align: center;
+}
+
+.title{
+    color: #2CB2B8;
+    font-family: 'Quicksand', sans-serif;
+}
+.field{
+    resize: none;
+    outline: 0;
+    font-size: 20px;
+    padding: 10px;
+    border: 0;
+    margin: 0;
+}
+.content_body{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    
+}
+
+.nodecoded{
+    border-radius: 10px 0 0 10px;
+}
+.decoded{
+    background-color: #3E4562;
+    color: white;
+    border-radius: 0 10px 10px 0;
+    
+}
+.copy_icon{
+    width: 30px;
+    height: 30px;
+    opacity: 0.4;
+    filter: invert(100%);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: #c1ba9d;
+    display: block;
+}
+.correct_icon{
+    width: 30px;
+    height: 30px;
+
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.copy_icon:hover{
+    opacity: 0.8;
+    cursor: pointer;
+
+}
+.send_row{
+    width: 100%;
+    background-color: none;
+    display: flex;
+    flex-direction: row;
+    background-color: none;
+    justify-content: space-between;
+}
+.key_container{
+    margin-top: 30px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+.key_input{
+    height: 30px;
+    width: 450px;
+    outline: 0;
+    font-size: 20px;
+    padding: 0 0 0 5px;
+
+}
+.title_row{
+    margin-bottom: 10px;
+}
+
+.buttons{
+    display: flex;
+    
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: none;
+}
+
+.btn{
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    background: none;
+    border: 2px solid #2CB2B8;
+    margin: 10px;
+    color: #2CB2B8;
+
+    
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1080px){
+    .content_body{
+        flex-direction: column;
+    }
+    .copy_icon{
+        top: calc(50% + 10px)
+    }
+    .send_row{
+        margin-bottom: 30px;
+        background-color: none;
+        padding-bottom: 20px;
+        flex-direction: column;
+    }
+    .key_input{
+        width: 99%;
+    }
+    .buttons{
+        justify-content: flex-end;
+        align-items: flex-end;
+        background-color: none;
+        margin-top: 10px;
+        width: 100%;
+    }
+} 
