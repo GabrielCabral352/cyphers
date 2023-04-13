@@ -179,4 +179,19 @@ body{
         margin-top: 10px;
         width: 100%;
     }
+    .nodecoded{
+        border-radius: 10px 10px 0 0;
+    }
+    .decoded{
+        background-color: #3E4562;
+        color: white;
+        border-radius: 0 0 10px 10px;
+        
+    }
 } 
+@media only screen and (max-width: 580px){
+    .card_holder{
+        width: 90dvw;
+        background-color: none;
+    }
+}
