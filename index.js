@@ -128,7 +128,7 @@ document.getElementById("cript").addEventListener(
             let txt = document.getElementById("field_text").value
             let key = document.getElementById("key_input").value
             if(txt.length > 0  && !isNaN(parseInt(key))){
-                alert(1)
+                
                 document.getElementById("returned_area").value=caesarCipher(txt, key)
             }else{
                 alert("Preencha os Campos Corretamente")
